@@ -1,0 +1,2619 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lekshmi Hospital | General Medicine & Healthcare in Kattathurai</title>
+  <meta name="description"
+    content="Lekshmi Hospital is a trusted healthcare center in Swamiyarmadam, Kattathurai offering general medicine, laboratory, pharmacy, and X-ray services.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Lekshmi Hospital">
+  <link rel="canonical" href="https://www.lekshmihospital.in/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NHTJVXKK');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Lekshmi Hospital",
+    "description": "Trusted healthcare center in Kattathurai offering general medicine, laboratory, pharmacy, and X-ray services with experienced doctors.",
+    "url": "https://www.lekshmihospital.in/",
+    "logo": "https://www.lekshmihospital.in/assets/images/logo2.png",
+    "image": "https://www.lekshmihospital.in/assets/images/logo2.png",
+    "telephone": "+91-4651-227353",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6/53/3, Swamiyarmadam",
+      "addressLocality": "Kattathurai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "629158",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "8.1833",
+      "longitude": "77.4167"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "13:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "17:00",
+        "closes": "20:00"
+      }
+    ],
+    "medicalSpecialty": "GeneralMedicine",
+    "availableService": [
+      {
+        "@type": "MedicalProcedure",
+        "name": "General Medicine Consultation"
+      },
+      {
+        "@type": "MedicalTest",
+        "name": "Laboratory Services"
+      },
+      {
+        "@type": "MedicalTest",
+        "name": "X-Ray Facility"
+      },
+      {
+        "@type": "MedicalTherapy",
+        "name": "Pharmacy Services"
+      }
+    ],
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/lekshmihospital",
+      "https://www.linkedin.com/company/lekshmihospital"
+    ]
+  }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all">
+
+  <!-- font-awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all">
+  <!-- font-flaticon CSS -->
+  <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all">
+  <!-- theme-default CSS -->
+  <link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all">
+  <!-- meanmenu CSS -->
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all">
+  <!-- venobox CSS -->
+  <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all">
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+  <style>
+    /* Appointment Form Styles */
+    .form-step {
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .form-step.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .step-indicator {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .step-indicator::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #e9ecef;
+      z-index: 1;
+    }
+
+    .step-dot {
+      width: 32px;
+      height: 32px;
+      background: #fff;
+      border: 2px solid #e9ecef;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+      transition: all 0.3s;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .step-dot.active {
+      border-color: #1b8a6b;
+      background: #1b8a6b;
+      color: #fff;
+    }
+
+    .step-dot.completed {
+      border-color: #1b8a6b;
+      background: #1b8a6b;
+      color: #fff;
+    }
+
+    .session-card {
+      border: 1px solid #e9ecef;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      background: #fff;
+    }
+
+    .session-card:hover {
+      border-color: #1b8a6b;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .session-card.selected {
+      border-color: #1b8a6b;
+      background-color: rgba(27, 138, 107, 0.05);
+    }
+
+    .slots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+    }
+
+    .slot-btn {
+      padding: 8px 5px;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      background: #fff;
+      font-size: 0.85rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-weight: 600;
+    }
+
+    .slot-btn.selected {
+      background: #1b8a6b;
+      color: #fff;
+      border-color: #1b8a6b;
+    }
+
+    #success-screen {
+      display: none;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .pulse-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 20px;
+    }
+
+    .pulse-icon {
+      width: 80px;
+      height: 80px;
+      background: #1b8a6b;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2.5rem;
+      position: relative;
+      z-index: 5;
+      margin: 10px;
+    }
+
+    .ripple {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      border: 2px solid #1b8a6b;
+      border-radius: 50%;
+      animation: rippleEffect 2s linear infinite;
+    }
+
+    @keyframes rippleEffect {
+      0% { width: 80px; height: 80px; opacity: 1; }
+      100% { width: 180px; height: 180px; opacity: 0; }
+    }
+
+    .info-panel-home {
+      background: #0c3c53;
+      color: #fff;
+      padding: 35px;
+      border-radius: 20px;
+    }
+
+    .info-item {
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    .info-icon {
+      min-width: 45px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      font-size: 1.1rem;
+      color: #1b8a6b;
+    }
+
+    .info-content h5 {
+      color: #fff;
+      font-size: 0.85rem;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+    }
+
+    .info-content p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .btn-next, .btn-submit {
+      background-color: #1b8a6b;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .btn-next:hover, .btn-submit:hover {
+      background-color: #0c3c53;
+      color: #fff;
+    }
+
+    .btn-back {
+      background-color: #f8f9fa;
+      color: #0c3c53;
+      border: 1px solid #dee2e6;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .summary-card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: left;
+      border: 1px solid #e9ecef;
+      font-size: 0.9rem;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      border-bottom: 1px dashed #dee2e6;
+      padding-bottom: 5px;
+    }
+
+    .loader-spinner {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      border: 0.2em solid currentColor;
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: spinner-border .75s linear infinite;
+      margin-right: 8px;
+      display: none;
+    }
+
+    .bg-light-green {
+      background-color: rgba(27, 138, 107, 0.05);
+    }
+  </style>
+  <!-- responsive CSS -->
+  <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <!-- modernizr js -->
+  <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+  <!-- loder -->
+  <div class="loader-wrapper">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <img src="assets/images/logo2.png" alt="Hospital Logo">
+      </div>
+      <div class="loader-text">Lekshmi Hospital</div>
+    </div>
+    <div class="loder-section left-section"></div>
+    <div class="loder-section right-section"></div>
+  </div>
+
+  <!-- Curser Pointer -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <!--==================================================-->
+  <!-- Start Lekshmi Hospital Main Menu  -->
+  <!--==================================================-->
+  <div id="sticky-header" class="mediic_nav_manu">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <div class="logo cursor-scale small">
+            <a class="logo_img" href="index.html" title="Lekshmi Hospital">
+              <img src="assets/images/logo.png" alt="logo">
+              <span class="logo-text">Lekshmi Hospital</span>
+            </a>
+            <a class="main_sticky" href="index.html" title="Lekshmi Hospital">
+              <img src="assets/images/logo2.png" alt="logo">
+              <span class="logo-text">Lekshmi Hospital</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <nav class="mediic_menu">
+            <ul class="nav_scroll">
+              <li>
+                <a class="mdy-hover cursor-scale small" href="index.html">Home </a>
+                <!-- <ul class="sub-menu">
+                    <li><a href="index.html">Home</a></li>
+                  </ul> -->
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="about.html">About</a>
+              </li>
+              <!-- <li>
+                  <a class="mdy-hover cursor-scale small" href="#">Pages </a>
+                  <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Our Service</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="team-details.html">Team Details</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="project-details.html">Project Details</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="testimonial.html">Testimonial</a></li>
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="faq.html">Faqs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </li> -->
+              <li>
+                <a class="mdy-hover cursor-scale small" href="service.html">Services </a>
+                <!-- <ul class="sub-menu">
+                    <li><a href="service.html">Our Service</a></li>
+                    <li><a href="service-details.html">Service Details</a></li>
+                  </ul> -->
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="blog-list.html">Blog </a>
+                <!-- <ul class="sub-menu">
+                    <li><a href="blog-grid.html">Blog Gird</a></li>
+                    <li><a href="blog-list.html">Blog List</a></li>
+                    <li><a href="blog-2colum.html">Blog 2Column</a></li>
+                    <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul> -->
+              </li>
+              <li>
+                <a class="mdy-hover cursor-scale small" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="mediic-right-side cursor-scale small">
+              <!-- Lekshmi Hospital Search -->
+              <!-- <div class="search-box-btn search-box-outer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div> -->
+              <!-- header button -->
+              <div class="header-button">
+                <a href="appointment.html">
+                  Get Appoinment
+                  <img src="assets/images/resource/arrow.png" alt="">
+                  <div class="mediic-hover-btn hover-btn"></div>
+                  <div class="mediic-hover-btn hover-btn2"></div>
+                  <div class="mediic-hover-btn hover-btn3"></div>
+                  <div class="mediic-hover-btn hover-btn4"></div>
+                </a>
+              </div>
+              <div class="sidebar">
+                <div class="nav-btn navSidebar-button">
+                  <span><i class="bi bi-grid-3x3-gap-fill"></i></span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lekshmi Hospital Mobile Menu  -->
+  <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+    <div class="mobile-menu">
+      <nav class="mediic_menu">
+        <ul class="nav_scroll">
+          <li>
+            <a class="mdy-hover" href="index.html">Home </a>
+            <!-- <ul class="sub-menu">
+                <li><a href="index.html">Home</a></li>
+              </ul> -->
+          </li>
+          <li><a class="mdy-hover" href="about.html">About</a></li>
+          <!-- <li>
+              <a class="mdy-hover" href="#">Pages </a>
+              <ul class="sub-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Our Service</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="team-details.html">Team Details</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="project-details.html">Project Details</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="faq.html">Faqs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </li> -->
+          <li>
+            <a class="mdy-hover" href="service.html">Services </a>
+            <!-- <ul class="sub-menu">
+                <li><a href="service.html">Our Service</a></li>
+                <li><a href="service-details.html">Service Details</a></li>
+              </ul> -->
+          </li>
+          <li>
+            <a class="mdy-hover" href="blog-list.html">Blog </a>
+            <!-- <ul class="sub-menu">
+                <li><a href="blog-grid.html">Blog Gird</a></li>
+                <li><a href="blog-list.html">Blog List</a></li>
+                <li><a href="blog-2colum.html">Blog 2Column</a></li>
+                <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                <li><a href="blog-details.html">Blog Details</a></li>
+              </ul> -->
+          </li>
+          <li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--==================================================-->
+  <!-- End Lekshmi Hospital Main Menu  -->
+  <!--==================================================-->
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <!--==================================================-->
+      <!-- Start Lekshmi Hospital Hero Section  -->
+      <!--==================================================-->
+
+      <div class="hero-section d-flex align-items-center">
+        <div class="container">
+          <div class="row hero-bg">
+            <div class="col-lg-12">
+              <div class="hero-content text-center">
+                <h1>
+                  Your Health,
+                  <!-- <span class="wood-animation"><img src="assets/images/slider/heart.png" alt=""></span> -->
+                  <span class="mediic-style cursor-scale">Our Priority</span>
+                </h1>
+                <div class="hero-btm-boxs">
+                  <div class="mediic-service-bx cursor-scale small">
+                    <div class="mediic-hero-icon">
+                      <img src="assets/images/slider/tick.png" alt="icon">
+                    </div>
+                    <div class="mediic-hero-content">
+                      <h4>Best Medical</h4>
+                      <p>
+                        Providing top-notch healthcare services with compassion
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap gap-3 align-items-center mt-4 mt-lg-0">
+                    <div class="mediic-btn cursor-scale small">
+                      <a href="contact.html">
+                       Consultation
+                        <i class="bi bi-arrow-return-right"></i></a>
+                    </div>
+                    <div class="mediic-btn cursor-scale small">
+                      <a href="tel:04651227353">
+                        Call Us
+                        <i class="bi bi-telephone-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="hero-socail-icon cursor-scale small">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div> -->
+
+                <div class="hero-cnct-nmbr cursor-scale small">
+                  <h4>04651 227353</h4>
+                </div>
+
+                <div class="hero-all-shape cursor-scale small">
+                  <!-- <div class="hero-shape">
+                      <img src="assets/images/Hero.png" alt="">
+                    </div> -->
+                  <div class="hero-shape2">
+                    <img src="assets/images/slider/plus.png" alt="">
+                  </div>
+                  <div class="hero-shape3">
+                    <img src="assets/images/slider/plus.png" alt="">
+                  </div>
+                  <!-- <div class="hero-shape4">
+                    <img src="assets/images/slider/arrow.png" alt="">
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End Lekshmi Hospital Hero Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Lekshmi Hospital Counter Section -->
+      <!--==================================================-->
+      <div class="counter-serction">
+        <div class="container">
+          <div class="row counter-bg align-items-center">
+            <div class="col-lg-12">
+              <div class="counter-items">
+                <div class="counter-left-side" data-aos="fade-right">
+                  <div class="counter-thumb">
+                    <img src="assets/images/slider/counter-img.png" alt="">
+                  </div>
+                  <div class="counter-title cursor-scale small">
+                    <h2>Medical Achivement</h2>
+                    <h2>Health Protection</h2>
+                  </div>
+                </div>
+                <!-- <div class="counter-right-side cursor-scale">
+                    <div class="counter-single-box bx-1" data-aos="fade-up">
+                      <div class="odometer-wrapper counter-box-title" data-count="12">
+                        <h1 class="odometer">12</h1>
+                        <h1>+</h1>
+                      </div>
+                      <div class="counter-desc">
+                        <p>Satisfied Patients</p>
+                      </div>
+                    </div>
+                    <div class="counter-single-box" data-aos="fade-down">
+                      <div class="odometer-wrapper counter-box-title" data-count="100">
+                        <h1 class="odometer"></h1>
+                        <h1>%</h1>
+                      </div>
+                      <div class="counter-desc">
+                        <p>Satisfaction Rates</p>
+                      </div>
+                    </div>
+                  </div> -->
+              </div>
+            </div>
+            <div class="mediic-shape-cntr">
+              <img src="assets/images/resource/crcle-bg.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End Lekshmi Hospital Counter Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Lekshmi Hospital Counter Section -->
+      <!--==================================================-->
+      <div class="feature-serction">
+        <div class="container">
+          <div class="row">
+
+            <!-- Professionals -->
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-single-box" data-aos="fade-down">
+                <div class="feature-head">
+                  <div class="head-title">
+                    <h2>Quality Healthcare</h2>
+                  </div>
+                  <div class="mediic-link cursor-scale small">
+                    <a href="service.html" aria-label="View Medical Services">
+                      <i class="bi bi-arrow-return-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="feature-content text-center">
+                  <div class="mediic-icon">
+                    <img src="assets/images/resource/srvc-tm.png" alt="General Medicine Services at Lekshmi Hospital">
+                  </div>
+
+                  <h3>
+                    <span>General Medicine</span>
+                  </h3>
+
+                  <p>
+                    Comprehensive primary healthcare services including consultation, diagnosis, and treatment for all
+                    age groups in Kattathurai.
+                  </p>
+                </div>
+
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <!-- Appointments -->
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-single-box bx-2" data-aos="fade-up">
+                <div class="feature-head">
+                  <div class="head-title">
+                    <h2>Doctor Appointments</h2>
+                  </div>
+                  <div class="mediic-link cursor-scale small">
+                    <a href="contact.html" aria-label="View Doctors Team">
+                      <i class="bi bi-arrow-return-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="feature-content text-center">
+                  <div class="mediic-icon">
+                    <img src="assets/images/resource/call.png" alt="Call Lekshmi Hospital for Appointment">
+                  </div>
+
+                  <h4>
+                    <a href="tel:04651227353">04651 227353</a>
+                  </h4>
+
+                  <p>
+                    Call to book appointments with our general physicians. OP timings: 9 AM – 1 PM & 5 PM – 8 PM.
+                  </p>
+                </div>
+
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="col-lg-4 col-md-6">
+              <div class="feature-single-box bx-3" data-aos="fade-down">
+                <div class="feature-head">
+                  <div class="head-title">
+                    <h2>Hospital Location</h2>
+                  </div>
+                  <div class="mediic-link cursor-scale small">
+                    <a href="contact.html" aria-label="View Location">
+                      <i class="bi bi-arrow-return-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="feature-content text-center">
+                  <div class="mediic-icon">
+                    <img src="assets/images/resource/location.png" alt="Lekshmi Hospital Location in Kattathurai">
+                  </div>
+
+                  <p>
+                    Lekshmi Hospital, 6/53/3, Swamiyarmadam, Kattathurai P.O - 629158<br>
+                    Opposite Anaamalais Toyota, Tamil Nadu
+                  </p>
+
+                  <div class="feature-btn cursor-scale small">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Lekshmi+Hospital+Kattathurai"
+                      target="_blank">
+                      Get Directions
+                    </a>
+                  </div>
+                </div>
+
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End Lekshmi Hospital Counter Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Lekshmi Hospital Counter Section -->
+      <!--==================================================-->
+      <div class="about-serction">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="top-mediic-section">
+                <div class="mediic-section-title cursor-scale" data-aos="flip-right">
+                  <h1>
+                    About Lekshmi Hospital
+                    <!-- <span><img src="assets/images/resource/star.png" alt="Lekshmi Hospital Icon"></span> -->
+                  </h1>
+                </div>
+
+                <!-- Replaced fake experience with trust factor -->
+                <!-- <div class="counter-single-box bx-2 cursor-scale" data-aos="fade-down">
+            <div class="odometer-wrapper counter-box-title">
+              <h1>2</h1>
+              <h1>+</h1>
+              <p class="counter-desc">QUALIFIED DOCTORS</p>
+            </div>
+          </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row about-bg align-items-center">
+
+            <!-- Image Section -->
+            <div class="col-lg-7">
+              <div class="about-thumb" data-aos="fade-up-right">
+                <img src="assets/images/resource/Doctor2.webp" alt="Lekshmi Hospital Kattathurai" style="width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
+
+<!-- '                <div class="thumbs-bxs">
+                  <div class="icon">
+                    <img src="assets/images/resource/heart.png" alt="Healthcare Icon">
+                  </div>
+
+                  <div class="text-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="250.5" height="250.5" viewbox="0 0 250.5 250.5">
+                      <path d="M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125" id="e-path-35ee1b2"></path>
+                      <text>
+                        <textpath href="#e-path-35ee1b2" startoffset="0%">
+                          GENERAL MEDICINE * LAB * PHARMACY * X-RAY *
+                        </textpath>
+                      </text>
+                    </svg>
+                  </div>
+                </div>' -->
+              </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="col-lg-5" data-aos="fade-up-left">
+              <div class="mediic-section-title2">
+                <h4>ABOUT LEKSHMI HOSPITAL</h4>
+
+                <h3 class="cursor-scale small">
+                  Lekshmi Hospital is a trusted healthcare center in Kattathurai providing quality general medical care
+                  with essential diagnostic and pharmacy services under one roof.
+                </h3>
+              </div>
+
+              <div class="about-service-list">
+                <h4>Your Health, Our Priority</h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> General Medicine Consultation
+                    <span class="list-pd">
+                      <i class="bi bi-check-circle-fill"></i> Laboratory Services
+                    </span>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> In-house Pharmacy
+                    <span class="list-pd">
+                      <i class="bi bi-check-circle-fill"></i> X-Ray Facility
+                    </span>
+                  </li>
+
+                  <li class="border-style">
+                    <i class="bi bi-check-circle-fill"></i> Experienced Doctors
+                    <span class="list-pd">
+                      <i class="bi bi-check-circle-fill"></i> Convenient OP Timings
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mediic-btn cursor-scale small">
+                <a href="appointment.html">
+                  Book Appointment <i class="bi bi-arrow-return-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="mediic-shape" data-aos="fade-up-left">
+              <img src="assets/images/resource/dctr.png" alt="Doctor Illustration">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End Lekshmi Hospital Counter Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Lekshmi Hospital Marquee Section  -->
+      <!--==================================================-->
+      <!-- 
+        <div class="marquee-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="marquee cursor-scale" data-aos="zoom-out-left">
+                  <div class="marquee-single-box">
+                    <div class="marquee-content">
+                      <h2>
+                        GYNOCLOGIST
+                        <span><img src="assets/images/resource/star.png" alt=""></span>
+                      </h2>
+                      <h2>
+                        CARDIOLOGIST
+                        <span><img src="assets/images/resource/star.png" alt=""></span>
+                      </h2>
+                      <h2>
+                        NUEROLOGIST
+                        <span><img src="assets/images/resource/star.png" alt=""></span>
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="marquee-single-box">
+                    <div class="marquee-content">
+                      <h2>
+                        GYNOCLOGIST
+                        <span><img src="assets/images/resource/star.png" alt=""></span>
+                      </h2>
+                      <h2>
+                        CARDIOLOGIST
+                        <span><img src="assets/images/resource/star.png" alt=""></span>
+                      </h2>
+                      <h2>
+                        NUEROLOGIST
+                        <span><img src="assets/images/resource/star.png" alt=""></span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      <!--==================================================-->
+      <!-- End Lekshmi Hospital Marquee Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Lekshmi Hospital Service Section  -->
+      <!--==================================================-->
+      <div class="mediic-top-section">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+
+              <div class="top-mediic-section">
+
+                <!-- Headline -->
+                <div class="mediic-section-title cursor-scale white" data-aos="flip-left">
+                  <h1>Quality Healthcare</h1>
+                  <h1>You Can Trust</h1>
+                </div>
+
+                <!-- Description -->
+                <div class="mediic-desc" data-aos="fade-up">
+                  <p style="max-width: 650px; margin: 0 auto;">
+                    Providing reliable general medical care in Kattathurai with essential services including laboratory
+                    testing, pharmacy, and X-ray facilities — all under one roof for your convenience.
+                  </p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mediic-btn cursor-scale small" data-aos="fade-down">
+                  <a href="service.html">
+                    Explore Our Services <i class="bi bi-arrow-return-right"></i>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-section">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+
+                <!-- General Medicine -->
+                <div class="swiper-slide">
+                  <div class="single-service-box" data-aos="zoom-out">
+                    <div class="service-thumb">
+                      <img src="assets/images/resource/service_medicine.webp" alt="General Medicine Consultation in Kattathurai">
+                      <div class="service-icon cursor-scale small">
+                        <a href="service-details.html?service=general-medicine"><i
+                            class="bi bi-arrow-return-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <h6>Consultation</h6>
+                      <h2 class="cursor-scale small">
+                        <a href="service-details.html?service=general-medicine">General Medicine</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Laboratory -->
+                <div class="swiper-slide">
+                  <div class="single-service-box" data-aos="zoom-in">
+                    <div class="service-thumb">
+                      <img src="assets/images/resource/service_lab.webp" alt="Medical Laboratory Services">
+                      <div class="service-icon cursor-scale small">
+                        <a href="service-details.html?service=laboratory"><i class="bi bi-arrow-return-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <h6>Diagnostics</h6>
+                      <h2 class="cursor-scale small">
+                        <a href="service-details.html?service=laboratory">Laboratory Services</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pharmacy -->
+                <div class="swiper-slide">
+                  <div class="single-service-box" data-aos="zoom-out">
+                    <div class="service-thumb">
+                      <img src="assets/images/resource/service_pharmacy.webp" alt="Pharmacy in Lekshmi Hospital">
+                      <div class="service-icon cursor-scale small">
+                        <a href="service-details.html?service=pharmacy"><i class="bi bi-arrow-return-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <h6>Medicines</h6>
+                      <h2 class="cursor-scale small">
+                        <a href="service-details.html?service=pharmacy">In-house Pharmacy</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- X-Ray -->
+                <div class="swiper-slide">
+                  <div class="single-service-box" data-aos="zoom-in">
+                    <div class="service-thumb">
+                      <img src="assets/images/resource/service_xray.webp" alt="X-Ray Facility in Kattathurai">
+                      <div class="service-icon cursor-scale small">
+                        <a href="service-details.html?service=xray"><i class="bi bi-arrow-return-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <h6>Imaging</h6>
+                      <h2 class="cursor-scale small">
+                        <a href="service-details.html?service=xray">X-Ray Facility</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- OP Consultation -->
+                <div class="swiper-slide">
+                  <div class="single-service-box" data-aos="zoom-out">
+                    <div class="service-thumb">
+                      <img src="assets/images/resource/service_medicine.webp" alt="Doctor Consultation OP Timings">
+                      <div class="service-icon cursor-scale small">
+                        <a href="service-details.html?service=op-consultation"><i
+                            class="bi bi-arrow-return-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="service-content">
+                      <h6>Outpatient</h6>
+                      <h2 class="cursor-scale small">
+                        <a href="service-details.html?service=op-consultation">OP Consultation</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Controls -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-scrollbar"></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/js/swiper.min.js"></script>
+
+      <!--==================================================-->
+      <!-- End Lekshmi Hospital Service Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Why Choose Us Section  -->
+      <!--==================================================-->
+      <div class="about-serction" style="padding-top: 80px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="mediic-section-title text-center cursor-scale" data-aos="flip-right">
+                <h1>
+                  Why Choose Lekshmi Hospital
+                  <!-- <span><img src="assets/images/resource/star.png" alt="Star Icon"></span> -->
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="feature-single-box text-center" data-aos="fade-up" style="height: 100%;">
+                <div class="feature-content">
+                  <div class="mediic-icon">
+                    <i class="bi bi-hospital" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <h3><span>Comprehensive Care</span></h3>
+                  <p>All essential medical services under one roof - consultation, diagnostics, pharmacy, and imaging facilities.</p>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="feature-single-box text-center" data-aos="fade-up" data-aos-delay="100" style="height: 100%;">
+                <div class="feature-content">
+                  <div class="mediic-icon">
+                    <i class="bi bi-clock-history" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <h3><span>Convenient Timings</span></h3>
+                  <p>Morning and evening OP hours (9AM-1PM, 5PM-8PM) designed to fit your schedule.</p>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="feature-single-box text-center" data-aos="fade-up" data-aos-delay="200" style="height: 100%;">
+                <div class="feature-content">
+                  <div class="mediic-icon">
+                    <i class="bi bi-geo-alt" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <h3><span>Easy to Locate</span></h3>
+                  <p>Conveniently located opposite Anaamalais Toyota in Kattathurai, easily accessible from surrounding areas.</p>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="feature-single-box text-center" data-aos="fade-up" data-aos-delay="300" style="height: 100%;">
+                <div class="feature-content">
+                  <div class="mediic-icon">
+                    <i class="bi bi-heart-pulse" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <h3><span>Patient-Centered</span></h3>
+                  <p>Compassionate care focused on your health and well-being with personalized attention.</p>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End Why Choose Us Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Our Facilities Section  -->
+      <!--==================================================-->
+      <div class="feature-serction" style="background: #f8f9fa; padding: 80px 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="mediic-section-title text-center cursor-scale" data-aos="flip-left">
+                <h1>
+                  Our Medical Facilities
+                  <!-- <span><img src="assets/images/resource/star.png" alt="Star Icon"></span> -->
+                </h1>
+                <p style="max-width: 700px; margin: 20px auto 0; font-size: 16px; color: #666;">
+                  Equipped with modern medical facilities to provide accurate diagnosis and effective treatment
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-6 mb-4">
+              <div class="feature-single-box" data-aos="fade-right" style="padding: 30px;">
+                <div class="feature-head">
+                  <div class="head-title">
+                    <h2>Laboratory Services</h2>
+                  </div>
+                </div>
+                <div class="feature-content">
+                  <p style="margin-bottom: 15px;">
+                    Our in-house laboratory provides comprehensive diagnostic testing services:
+                  </p>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Blood Tests (Complete Blood Count, Blood Sugar, etc.)
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Urine Analysis
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Lipid Profile & Liver Function Tests
+                    </li>
+                    <li style="padding: 8px 0;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Quick Results for Timely Treatment
+                    </li>
+                  </ul>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="feature-single-box" data-aos="fade-left" style="padding: 30px;">
+                <div class="feature-head">
+                  <div class="head-title">
+                    <h2>X-Ray Facility</h2>
+                  </div>
+                </div>
+                <div class="feature-content">
+                  <p style="margin-bottom: 15px;">
+                    Modern X-ray imaging services for accurate diagnosis:
+                  </p>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Digital X-Ray Technology
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Chest, Bone & Joint Imaging
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Safe & Minimal Radiation Exposure
+                    </li>
+                    <li style="padding: 8px 0;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Same-Day Reports Available
+                    </li>
+                  </ul>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="feature-single-box" data-aos="fade-right" style="padding: 30px;">
+                <div class="feature-head">
+                  <div class="head-title">
+                    <h2>In-House Pharmacy</h2>
+                  </div>
+                </div>
+                <div class="feature-content">
+                  <p style="margin-bottom: 15px;">
+                    Convenient pharmacy services for immediate medication needs:
+                  </p>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Wide Range of Medicines Available
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Quality Assured Medications
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Prescription Fulfillment
+                    </li>
+                    <li style="padding: 8px 0;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Expert Pharmacist Guidance
+                    </li>
+                  </ul>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="feature-single-box" data-aos="fade-left" style="padding: 30px;">
+                <div class="feature-head">
+                  <div class="head-title">
+                    <h2>General Medicine</h2>
+                  </div>
+                </div>
+                <div class="feature-content">
+                  <p style="margin-bottom: 15px;">
+                    Comprehensive primary healthcare consultation:
+                  </p>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Treatment for Fever, Cold & Infections
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Chronic Disease Management
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Preventive Health Check-ups
+                    </li>
+                    <li style="padding: 8px 0;">
+                      <i class="bi bi-check-circle-fill" style="color: #00a8cc; margin-right: 10px;"></i>
+                      Health Counseling & Guidance
+                    </li>
+                  </ul>
+                </div>
+                <div class="mediic-hover-box hover-bx"></div>
+                <div class="mediic-hover-box hover-bx2"></div>
+                <div class="mediic-hover-box hover-bx3"></div>
+                <div class="mediic-hover-box hover-bx4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End Our Facilities Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Health Tips Section  -->
+      <!--==================================================-->
+      <div class="about-serction" style="padding: 80px 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="mediic-section-title text-center cursor-scale" data-aos="flip-right">
+                <h1>
+                  Health & Wellness Tips
+                  <!-- <span><img src="assets/images/resource/star.png" alt="Star Icon"></span> -->
+                </h1>
+                <p style="max-width: 700px; margin: 20px auto 0; font-size: 16px; color: #666;">
+                  Simple steps to maintain good health and prevent common illnesses
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="blog-single-box" data-aos="fade-up" style="height: 100%;">
+                <div class="blog-content" style="padding: 30px;">
+                  <div class="mediic-icon" style="text-align: center; margin-bottom: 20px;">
+                    <i class="bi bi-droplet" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <div class="blog-title">
+                    <h2 style="font-size: 22px; margin-bottom: 15px;">Stay Hydrated</h2>
+                  </div>
+                  <p style="color: #666; line-height: 1.8;">
+                    Drink at least 8-10 glasses of water daily. Proper hydration helps maintain body temperature, aids digestion, and keeps your skin healthy.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="blog-single-box" data-aos="fade-up" data-aos-delay="100" style="height: 100%;">
+                <div class="blog-content" style="padding: 30px;">
+                  <div class="mediic-icon" style="text-align: center; margin-bottom: 20px;">
+                    <i class="bi bi-moon-stars" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <div class="blog-title">
+                    <h2 style="font-size: 22px; margin-bottom: 15px;">Quality Sleep</h2>
+                  </div>
+                  <p style="color: #666; line-height: 1.8;">
+                    Get 7-8 hours of sleep each night. Good sleep strengthens immunity, improves concentration, and helps your body recover and repair.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="blog-single-box" data-aos="fade-up" data-aos-delay="200" style="height: 100%;">
+                <div class="blog-content" style="padding: 30px;">
+                  <div class="mediic-icon" style="text-align: center; margin-bottom: 20px;">
+                    <i class="bi bi-apple" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <div class="blog-title">
+                    <h2 style="font-size: 22px; margin-bottom: 15px;">Balanced Diet</h2>
+                  </div>
+                  <p style="color: #666; line-height: 1.8;">
+                    Include fruits, vegetables, whole grains, and proteins in your meals. A balanced diet provides essential nutrients for optimal health.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="blog-single-box" data-aos="fade-up" style="height: 100%;">
+                <div class="blog-content" style="padding: 30px;">
+                  <div class="mediic-icon" style="text-align: center; margin-bottom: 20px;">
+                    <i class="bi bi-activity" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <div class="blog-title">
+                    <h2 style="font-size: 22px; margin-bottom: 15px;">Regular Exercise</h2>
+                  </div>
+                  <p style="color: #666; line-height: 1.8;">
+                    Engage in 30 minutes of physical activity daily. Walking, jogging, or yoga helps maintain healthy weight and reduces disease risk.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="blog-single-box" data-aos="fade-up" data-aos-delay="100" style="height: 100%;">
+                <div class="blog-content" style="padding: 30px;">
+                  <div class="mediic-icon" style="text-align: center; margin-bottom: 20px;">
+                    <i class="bi bi-shield-check" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <div class="blog-title">
+                    <h2 style="font-size: 22px; margin-bottom: 15px;">Regular Check-ups</h2>
+                  </div>
+                  <p style="color: #666; line-height: 1.8;">
+                    Schedule routine health screenings. Early detection of health issues leads to better treatment outcomes and prevents complications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="blog-single-box" data-aos="fade-up" data-aos-delay="200" style="height: 100%;">
+                <div class="blog-content" style="padding: 30px;">
+                  <div class="mediic-icon" style="text-align: center; margin-bottom: 20px;">
+                    <i class="bi bi-hand-thumbs-up" style="font-size: 50px; color: #00a8cc;"></i>
+                  </div>
+                  <div class="blog-title">
+                    <h2 style="font-size: 22px; margin-bottom: 15px;">Hand Hygiene</h2>
+                  </div>
+                  <p style="color: #666; line-height: 1.8;">
+                    Wash hands frequently with soap and water. Good hand hygiene is the simplest way to prevent infections and stay healthy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End Health Tips Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Lekshmi Hospital Appoinment Section  -->
+      <!--==================================================-->
+      <div class="appoinment-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="mediic-section-title cursor-scale text-center" data-aos="flip-left">
+                <h1>MAKE APPOINMENT</h1>
+              </div>
+            </div>
+            <div class="mediic-shape-cntr">
+              <img src="assets/images/resource/crcle-bg.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mediic-appoinment">
+        <div class="container">
+          <div class="row appoinment align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+              <!-- <div class="info-panel-home">
+                <h3 class="mb-4 text-white border-bottom pb-3">Hospital Details</h3>
+                <div class="info-item">
+                  <div class="info-icon"><i class="bi bi-clock-history"></i></div>
+                  <div class="info-content">
+                    <h5>OP Timings</h5>
+                    <p>9:00 AM – 1:00 PM</p>
+                    <p>5:00 PM – 8:00 PM</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                  <div class="info-content">
+                    <h5>Address</h5>
+                    <p>6/53/3, Swamiyarmadam,</p>
+                    <p>Kattathurai P.O – 629158</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
+                  <div class="info-content">
+                    <h5>Emergency Call</h5>
+                    <p><a href="tel:04651227353" class="text-white">04651 227353</a></p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <a href="https://wa.me/919943226033" target="_blank" class="btn w-100 py-3 text-white fw-bold d-flex align-items-center justify-content-center rounded-pill" style="background-color: #25d366;">
+                    <i class="bi bi-whatsapp me-2 fs-5"></i> Chat on WhatsApp
+                  </a>
+                </div>
+              </div> -->
+            </div>
+            <div class="col-lg-7" data-aos="zoom-in-left">
+              <div id="appointment-form-container" class="contact-form-box" style="background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                <div class="mediic-section-title2 mb-4">
+                  <h4>ENQUIRY FORM</h4>
+                  <h3 id="step-title" style="font-size: 1.5rem;">Step 1 — Patient Details</h3>
+                </div>
+
+                <div class="step-indicator">
+                  <div class="step-dot active" data-step="1">1</div>
+                  <div class="step-dot" data-step="2">2</div>
+                  <div class="step-dot" data-step="3">3</div>
+                </div>
+
+                <form id="appointment-form">
+                  <!-- Step 1 -->
+                  <div class="form-step active" id="step-1">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold small">Full Name*</label>
+                        <input type="text" id="patient-name" class="form-control" placeholder="Your name" required style="padding: 12px;">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold small">Phone Number*</label>
+                        <input type="tel" id="patient-phone" class="form-control" placeholder="Phone number" required style="padding: 12px;">
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <label class="form-label fw-bold small">Preferred Date*</label>
+                        <input type="date" id="appointment-date" class="form-control" required style="padding: 12px;">
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button type="button" class="btn-next w-100" onclick="goToStep(2)">
+                        Next Step <i class="bi bi-arrow-right-short ms-2"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="form-step" id="step-2">
+                    <div class="session-card" onclick="selectSession('morning')">
+                      <h6 class="mb-3"><i class="bi bi-clock me-2"></i> Morning (9AM-1PM)</h6>
+                      <div class="slots-grid" id="morning-slots"></div>
+                    </div>
+                    <div class="session-card" onclick="selectSession('evening')">
+                      <h6 class="mb-3"><i class="bi bi-clock-history me-2"></i> Evening (5PM-8PM)</h6>
+                      <div class="slots-grid" id="evening-slots"></div>
+                    </div>
+                    <div class="mt-4 d-flex gap-2">
+                      <button type="button" class="btn-back flex-grow-1" onclick="goToStep(1)">Back</button>
+                      <button type="button" class="btn-next flex-grow-1" onclick="goToStep(3)">Next</button>
+                    </div>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="form-step" id="step-3">
+                    <div class="mb-3">
+                      <label class="form-label fw-bold small">Message (Optional)</label>
+                      <textarea id="patient-message" class="form-control" rows="3" placeholder="Any symptoms?"></textarea>
+                    </div>
+                    <div class="alert alert-info border-0 bg-light-green p-3 mb-3 small text-dark">
+                      We will call you at <strong id="display-phone" class="text-primary">---</strong> to confirm.
+                    </div>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn-back flex-grow-1" onclick="goToStep(2)">Back</button>
+                      <button type="button" class="btn-submit flex-grow-1" id="submit-enquiry-btn" onclick="submitEnquiry()">
+                        <span class="loader-spinner" id="submit-loader"></span>
+                        Submit <i class="bi bi-send-fill ms-2"></i>
+                      </button>
+                    </div>
+                    <div id="error-message" class="mt-2 text-danger small fw-bold" style="display: none;"></div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Success Screen -->
+              <div id="success-screen" style="background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                <div class="pulse-container">
+                  <div class="pulse-icon"><i class="bi bi-telephone-inbound"></i></div>
+                  <div class="ripple"></div>
+                </div>
+                <h3 class="mb-2">Thank You!</h3>
+                <p class="small opacity-75 mb-4">We will call you shortly to confirm.</p>
+                <div class="summary-card">
+                  <div class="summary-row"><span>Name</span><span id="summary-name" class="fw-bold"></span></div>
+                  <div class="summary-row"><span>Phone</span><span id="summary-phone" class="fw-bold"></span></div>
+                  <div class="summary-row"><span>Date</span><span id="summary-date" class="fw-bold"></span></div>
+                  <div class="summary-row"><span>Session</span><span id="summary-session" class="fw-bold"></span></div>
+                  <div class="summary-row"><span>Time Slot</span><span id="summary-slot" class="fw-bold"></span></div>
+                  <div class="summary-row"><span>Message</span><span id="summary-message" class="fw-bold">---</span></div>
+                </div>
+                <button class="btn btn-link btn-sm text-decoration-none text-muted" onclick="resetForm()">
+                  Book Another
+                </button>
+              </div>
+            </div>
+            <!-- <div class="appointment-shape">
+              <div class="mediic-shape-2" data-aos="fade-down">
+                <img src="assets/images/resource/heart2.png" alt="">
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End mediic Appoinment Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- End mediic Appoinment Section  -->
+      <!--==================================================-->
+      <div class="team-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="top-mediic-section">
+                <div class="mediic-section-title cursor-scale" data-aos="flip-left">
+                  <h1>
+                    MEET OUR BEST
+                    <br>
+                    DOCTORS
+                  </h1>
+                </div>
+                <!-- <div class="counter-single-box bx-2 cursor-scale" data-aos="fade-down">
+                    <div class="odometer-wrapper counter-box-title" data-count="38">
+                      <h1 class="odometer"></h1>
+                      <h1>+</h1>
+                      <p class="counter-desc">PROFESSIONAL DOCTORS</p>
+                    </div>
+                  </div> -->
+              </div>
+            </div>
+            <div class="mediic-shape">
+              <img src="assets/images/resource/crcle-bg.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="swiper style-2 team">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team-single-box" data-aos="fade-up">
+                    <div class="team-thumb">
+                      <img src="assets/images/resource/Doctor1.webp" alt="">
+                    </div>
+                    <div class="team-content text-center">
+                      <h5>General Medicine</h5>
+                      <h2>Dr. Hari. M.L. MD</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-single-box" data-aos="zoom-in">
+                    <div class="team-thumb">
+                      <img src="assets/images/resource/Doctor2.webp" alt="">
+                    </div>
+                    <div class="team-content text-center">
+                      <h5>MBBS</h5>
+                      <h2>Dr. Anjani J.V.</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End mediic Appoinment Section  -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start mediic Testimonial Section  -->
+      <!--==================================================-->
+      <!-- <div class="mediic-top-section style-2">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <div class="mediic-section-title text-center white" data-aos="flip-right">
+                  <h1 class="cursor-scale">TESTIMONIAL</h1>
+                </div>
+              </div>
+              <div class="mediic-shape">
+                <img src="assets/images/resource/circle2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="testi-thumb" data-aos="zoom-in-right">
+                  <img src="assets/images/resource/testi.webp" alt="">
+                  <div class="testi-content">
+                    <h4>Get Free Consultation</h4>
+                    <div class="mediic-btn cursor-scale small">
+                      <a href="#">Appoinment <i class="bi bi-arrow-return-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="swiper mySwiper6" data-aos="zoom-in-left">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
+                            <img src="assets/images/resource/quote.png" alt="">
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
+                              Quickly fashion backend strategic theme areas with
+                              virtual growth strategies. Authoritatively
+                              formulate competitive experiences rather than
+                              granular manufactured products granular intelle
+                              capital without equity invested
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
+                              <img src="assets/images/resource/people.png" alt="">
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
+                              <h6>Psycologist</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
+                            <img src="assets/images/resource/quote.png" alt="">
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
+                              Quickly fashion backend strategic theme areas with
+                              virtual growth strategies. Authoritatively
+                              formulate competitive experiences rather than
+                              granular manufactured products granular intelle
+                              capital without equity invested
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
+                              <img src="assets/images/resource/people.png" alt="">
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
+                              <h6>Psycologist</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
+                            <img src="assets/images/resource/quote.png" alt="">
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
+                              Quickly fashion backend strategic theme areas with
+                              virtual growth strategies. Authoritatively
+                              formulate competitive experiences rather than
+                              granular manufactured products granular intelle
+                              capital without equity invested
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
+                              <img src="assets/images/resource/people.png" alt="">
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
+                              <h6>Psycologist</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
+                            <img src="assets/images/resource/quote.png" alt="">
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
+                              Quickly fashion backend strategic theme areas with
+                              virtual growth strategies. Authoritatively
+                              formulate competitive experiences rather than
+                              granular manufactured products granular intelle
+                              capital without equity invested
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
+                              <img src="assets/images/resource/people.png" alt="">
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
+                              <h6>Psycologist</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
+                            <img src="assets/images/resource/quote.png" alt="">
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
+                              Quickly fashion backend strategic theme areas with
+                              virtual growth strategies. Authoritatively
+                              formulate competitive experiences rather than
+                              granular manufactured products granular intelle
+                              capital without equity invested
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
+                              <img src="assets/images/resource/people.png" alt="">
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
+                              <h6>Psycologist</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
+                            <img src="assets/images/resource/quote.png" alt="">
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
+                              Quickly fashion backend strategic theme areas with
+                              virtual growth strategies. Authoritatively
+                              formulate competitive experiences rather than
+                              granular manufactured products granular intelle
+                              capital without equity invested
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
+                              <img src="assets/images/resource/people.png" alt="">
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
+                              <h6>Psycologist</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testi-single-box">
+                        <div class="testi-content-2">
+                          <div class="testi-quote">
+                            <img src="assets/images/resource/quote.png" alt="">
+                          </div>
+                          <ul class="testi-rating">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                          </ul>
+                          <div class="testi-desc">
+                            <p>
+                              Quickly fashion backend strategic theme areas with
+                              virtual growth strategies. Authoritatively
+                              formulate competitive experiences rather than
+                              granular manufactured products granular intelle
+                              capital without equity invested
+                            </p>
+                          </div>
+                          <div class="user-info">
+                            <div class="people-pic">
+                              <img src="assets/images/resource/people.png" alt="">
+                            </div>
+                            <div class="user-name">
+                              <h4>John D. Alexon</h4>
+                              <h6>Psycologist</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!--==================================================-->
+      <!-- End mediic Testimonial Section -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start mediic Brand Section -->
+      <!--==================================================-->
+      <!-- <div class="brand-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="swiper brand cursor-scale" data-aos="zoom-in-left">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand3.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand4.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand5.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand3.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand4.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-single-box">
+                        <div class="brand-thumb">
+                          <img src="assets/images/resource/brand5.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!--==================================================-->
+      <!-- End mediic Brand Section -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start mediic Blog Section -->
+      <!--==================================================-->
+
+      <div class="blog-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="top-mediic-section">
+                <div class="mediic-section-title" data-aos="flip-right">
+                  <h1 class="cursor-scale">
+                    READ OUR
+                    <br>
+                    LATEST BLOG
+                  </h1>
+                </div>
+                <div class="mediic-btn cursor-scale small" data-aos="fade-down">
+                  <a href="blog-list.html">View All Blog <i class="bi bi-arrow-return-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="blog-single-box" data-aos="fade-up">
+                <div class="blog-thumb">
+                  <img src="assets/images/resource/blog_tip.webp" alt="Seasonal Health Tips">
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+                <div class="blog-content">
+                  <div class="blogs-category">
+                    <ul>
+                      <li class="blg-date">JANUARY 15, 2025</li>
+                    </ul>
+                    <ul>
+                      <li class="blg-admin">DR. HARI. M.L. MD</li>
+                    </ul>
+                  </div>
+                  <div class="blog-title">
+                    <h2 class="cursor-scale small">
+                      <a href="blog-details.html?blog=seasonal-health-tips">Seasonal Health Tips for Kattathurai Residents</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog-single-box" data-aos="fade-down">
+                <div class="blog-thumb">
+                  <img src="assets/images/resource/blog_diabetes.webp" alt="Diabetes Management">
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+                <div class="blog-content">
+                  <div class="blogs-category">
+                    <ul>
+                      <li class="blg-date">JANUARY 10, 2025</li>
+                    </ul>
+                    <ul>
+                      <li class="blg-admin">DR. ANJANI J.V.</li>
+                    </ul>
+                  </div>
+                  <div class="blog-title">
+                    <h2 class="cursor-scale small">
+                      <a href="blog-details.html?blog=diabetes-management">Managing Diabetes: A Complete Guide</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="blog-single-box" data-aos="fade-up">
+                <div class="blog-thumb">
+                  <img src="assets/images/resource/blog_checkup.webp" alt="Regular Health Checkups">
+                  <div class="mediic-hover-box hover-bx"></div>
+                  <div class="mediic-hover-box hover-bx2"></div>
+                  <div class="mediic-hover-box hover-bx3"></div>
+                  <div class="mediic-hover-box hover-bx4"></div>
+                </div>
+                <div class="blog-content">
+                  <div class="blogs-category">
+                    <ul>
+                      <li class="blg-date">JANUARY 5, 2025</li>
+                    </ul>
+                    <ul>
+                      <li class="blg-admin">LEKSHMI HOSPITAL TEAM</li>
+                    </ul>
+                  </div>
+                  <div class="blog-title">
+                    <h2 class="cursor-scale small">
+                      <a href="blog-details.html?blog=importance-of-regular-checkups">Why Regular Health Check-ups Matter</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==================================================-->
+      <!-- End mediic Blog Section -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start mediic Subscribe Section -->
+      <!--==================================================-->
+
+      <div class="mediic-subscribe">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <!-- Content -->
+            <div class="col-lg-7">
+              <div class="subscribe-content" data-aos="fade-up">
+
+                <div class="subscribe-icon cursor-scale">
+                  <img src="assets/images/resource/bag.png" alt="Healthcare Services Icon">
+                </div>
+
+                <div class="subscribe-title">
+                  <h1 class="cursor-scale small" style="line-height:1.5;">
+                    All-in-one healthcare services in Kattathurai.
+                  </h1>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="col-lg-5">
+              <div class="mediic-button text-right cursor-scale small" data-aos="fade-down">
+                <a href="appointment.html" class="mediic-btn">
+                  <span class="mediic-btn__hover"></span>
+                  <span class="mediic-btn__hover"></span>
+                  <span class="mediic-btn__hover"></span>
+                  <span class="mediic-btn__hover"></span>
+                  <span class="mediic-btn__hover"></span>
+                  <span class="mediic-btn__hover"></span>
+
+                  Book Appointment
+                  <i class="bi bi-arrow-return-right"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--==================================================-->
+      <!-- End mediic Subscribe Section -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start mediic Footer Section -->
+      <!--==================================================-->
+      <div class="footer-section">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+              <div class="widget widgets-company-info" data-aos="zoom-in-right">
+                <div class="company-logo cursor-scale small">
+                  <a href="index.html"><img src="assets/images/logo2.png" alt="logo"></a>
+                </div>
+                <div class="company-info-desc">
+                  <p>
+                    Trusted healthcare in Kattathurai with consultation, lab, pharmacy, and X-ray services.
+                  </p>
+                </div>
+                <!-- <form>
+                    <div class="subscribe_form">
+                      <input type="email" name="email" placeholder="Enter Your E-Mail">
+                      <button type="submit" class="submits-btn">
+                        <i class="bi bi-send-check"></i>
+                      </button>
+                    </div>
+                    <div class="subscribe_form_send"></div>
+                    <label class="widget-check">
+                      <input type="checkbox">
+                      Agree Terms and Condition
+                      <span class="checkmark"></span>
+                    </label>
+                  </form> -->
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <div class="widget widget-nav-menu" data-aos="zoom-out-up">
+                <h4 class="widget-title">Quick Links</h4>
+                <div class="menu-quick-link-content">
+                  <ul class="footer-menu cursor-scale small">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="about.html"> About </a></li>
+                    <li><a href="service.html"> Services </a></li>
+                    <li><a href="blog-list.html"> Blog </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg-2 col-md-6">
+                <div class="widget widget-nav-menu" data-aos="zoom-out">
+                  <h4 class="widget-title">Useful Links</h4>
+                  <div class="menu-quick-link-content">
+                    <ul class="footer-menu cursor-scale small">
+                      <li><a href="#"> Partners </a></li>
+                      <li><a href="testimonial.html"> Testimonial </a></li>
+                      <li><a href="appointment.html"> Appoinment </a></li>
+                      <li><a href="#"> Privacy </a></li>
+                      <li><a href="faq.html"> FAQ </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+              <div class="mediic-address" data-aos="zoom-in-left">
+                <h4 class="widget-title">Contacts</h4>
+                <div class="footer-mediic-contact">
+                  <div class="place-location">
+                    <p>6/53/3, Swamiyarmadam, Kattathurai P.O - 629158</p>
+                    <p>(Opposite Anaamalais Toyota)</p>
+                  </div>
+                  <div class="mediic-info">
+                    <h5>OP Timings</h5>
+                    <p>9AM - 1PM, 5PM - 8PM</p>
+                  </div>
+                  <div class="mediic-info">
+                    <h5>Call Now</h5>
+                    <p>04651 227353</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="foorer-shape">
+                <div class="footer-thumb" data-aos="zoom-in-right">
+                  <img src="assets/images/resource/footer-img-1.png" alt="">
+                </div>
+                <div class="footer-thumb1" data-aos="zoom-in-left">
+                  <img src="assets/images/resource/footer-img-2.png" alt="">
+                </div>
+              </div> -->
+          </div>
+          <div class="row footer-btm d-flex align-items-center">
+            <div class="col-lg-6 col-md-6">
+              <div class="mediic-social-icon cursor-scale small">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"> </i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="mediic-company-desc text-right">
+                <p>
+                  Lekshmi Hospital ©2026 - All Rights Reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--==================================================-->
+      <!-- End mediic Footer Section -->
+      <!--==================================================-->
+
+      <!--==================================================-->
+      <!-- Start Search Popup Area -->
+      <!--==================================================-->
+      <!-- <div class="search-popup">
+          <button class="close-search style-two">
+            <span class="flaticon-multiply"><i class="far fa-times-circle"></i></span>
+          </button>
+          <button class="close-search"><i class="fas fa-arrow-up"></i></button>
+          <form method="post" action="#">
+            <div class="form-group">
+              <input type="search" name="search-field" value="" placeholder="Search Here" required="">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div> -->
+      <!--==================================================-->
+      <!-- End Search Popup Area -->
+      <!--==================================================-->
+      <!--==================================================-->
+      <!-- Sidebar Cart Item -->
+      <!--==================================================-->
+      <div class="xs-sidebar-group info-group">
+        <div class="xs-overlay xs-bg-black"></div>
+        <div class="xs-sidebar-widget">
+          <div class="sidebar-widget-container">
+            <div class="widget-heading">
+              <a href="#" class="close-side-widget">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+            <div class="sidebar-textwidget">
+              <!-- Sidebar Info Content -->
+              <div class="sidebar-info-contents">
+                <div class="content-inner2">
+                  <div class="nav-logo">
+                    <a href="index.html"><img src="assets/images/logo2.png" alt=""></a>
+                  </div>
+                  <div class="row padding-two">
+                    <div class="col-lg-6 padding-0 pl-0 pr-0">
+                      <div class="content-thumb-box">
+                        <img src="assets/images/resource/blog6.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 padding-0 pl-0 pr-0">
+                      <div class="content-thumb-box">
+                        <img src="assets/images/resource/blog5.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 padding-0 pl-0 pr-0">
+                      <div class="content-thumb-box">
+                        <img src="assets/images/resource/blog4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 padding-0 pl-0 pr-0">
+                      <div class="content-thumb-box">
+                        <img src="assets/images/resource/blog3.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-info">
+                    <h2>Contact Info</h2>
+                    <ul class="list-style-one">
+                      <li>
+                        <span><i class="bi bi-geo-alt"></i></span>6/53/3, Swamiyarmadam, Kattathurai P.O - 629158
+                      </li>
+                      <li>
+                        <span><i class="bi bi-telephone-forward"></i></span>04651 227353
+                      </li>
+                      <li>
+                        <span><i class="bi bi-clock"></i></span>OP Timings: 9AM - 1PM, 5PM - 8PM
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Social Box -->
+                  <ul class="social-box">
+                    <li class="facebook">
+                      <a href="#" class="fab fa-facebook-f"></a>
+                    </li>
+                    <li class="instagram">
+                      <a href="#" class="fab fa-instagram"></a>
+                    </li>
+                    <!-- <li class="linkedin">
+                      <a href="#" class="fab fa-twitter"></a>
+                    </li>
+                    <li class="instagram">
+                      <a href="#" class="fab fa-pinterest-p"></a>
+                    </li>
+                    <li class="youtube">
+                      <a href="#" class="fab fa-linkedin-in"></a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==================================================-->
+      <!-- End Sidebar section Area -->
+      <!--==================================================-->
+    </div>
+  </div>
+
+  <!--==================================================-->
+  <!-- Start scrollup section Area -->
+  <!--==================================================-->
+  <a href="https://wa.me/9943226033" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <div id="progress" class="progress hide">
+    <div id="progress-value"></div>
+  </div>
+  <!--==================================================-->
+  <!-- Start scrollup section Area -->
+  <!--==================================================-->
+
+  <script src="assets/js/gsap.min.js"></script>
+
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+
+  <script src="assets/js/aos.js"></script>
+
+  <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+
+  <script src="assets/js/odometer.min.js"></script>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+  <script src="venobox/venobox.js"></script>
+
+  <script src="venobox/venobox.min.js"></script>
+
+  <script src="assets/js/jquery.meanmenu.js"></script>
+
+  <script src="assets/js/jquery.scrollUp.js"></script>
+
+  <script src="assets/js/appear.js"></script>
+
+  <script src="assets/js/jquery.barfiller.js"></script>
+
+  <script src="assets/js/theme.js"></script>
+
+  <script src="assets/js/my.js"></script>
+  <script>
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx-YPU-as_p2WeRD1BGC9bQZgF1Wzx4VqDksa5-t8pYAbTPPfrKFn1rwnm5B8IuCqACpQ/exec";
+    let currentStep = 1;
+    let appointmentData = { name: '', phone: '', date: '', session: '', slot: '', message: '' };
+
+    // Set min date
+    const dateInput = document.getElementById('appointment-date');
+    if(dateInput) dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+
+    const morningSlots = ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM"];
+    const eveningSlots = ["5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM"];
+
+    function generateSlots() {
+      const mc = document.getElementById('morning-slots');
+      const ec = document.getElementById('evening-slots');
+      if(!mc || !ec) return;
+      mc.innerHTML = ''; ec.innerHTML = '';
+      morningSlots.forEach(s => {
+        const d = document.createElement('div'); d.className = 'slot-btn'; d.innerText = s;
+        d.onclick = (e) => { e.stopPropagation(); selectSlot(s, 'morning', d); };
+        mc.appendChild(d);
+      });
+      eveningSlots.forEach(s => {
+        const d = document.createElement('div'); d.className = 'slot-btn'; d.innerText = s;
+        d.onclick = (e) => { e.stopPropagation(); selectSlot(s, 'evening', d); };
+        ec.appendChild(d);
+      });
+    }
+    generateSlots();
+
+    function goToStep(step) {
+      if (step > currentStep && !validateStep(currentStep)) return;
+      const curEl = document.getElementById(`step-${currentStep}`);
+      const nextEl = document.getElementById(`step-${step}`);
+      if(curEl) curEl.classList.remove('active');
+      if(nextEl) nextEl.classList.add('active');
+      document.querySelectorAll('.step-dot').forEach(dot => {
+        const s = parseInt(dot.getAttribute('data-step'));
+        dot.classList.toggle('active', s === step);
+        dot.classList.toggle('completed', s < step);
+      });
+      currentStep = step;
+      const titles = { 1: "Step 1 — Patient Details", 2: "Step 2 — Choose Time Slot", 3: "Step 3 — Final Confirmation" };
+      const titleEl = document.getElementById('step-title');
+      if(titleEl) titleEl.innerText = titles[step];
+      if (step === 3) {
+        const dp = document.getElementById('display-phone');
+        if(dp) dp.innerText = appointmentData.phone;
+      }
+    }
+
+    function validateStep(s) {
+      if (s === 1) {
+        const n = document.getElementById('patient-name').value;
+        const p = document.getElementById('patient-phone').value;
+        const d = document.getElementById('appointment-date').value;
+        if (!n || !p || !d) { alert("Please fill all fields."); return false; }
+        if (!/^[0-9]{7,15}$/.test(p.replace(/\+/g, ''))) { alert("Invalid phone number."); return false; }
+        appointmentData.name = n; appointmentData.phone = p; appointmentData.date = d;
+        return true;
+      }
+      if (s === 2 && !appointmentData.slot) { alert("Please select a slot."); return false; }
+      return true;
+    }
+
+    function selectSlot(s, sess, el) {
+      document.querySelectorAll('.slot-btn').forEach(b => b.classList.remove('selected'));
+      document.querySelectorAll('.session-card').forEach(c => c.classList.remove('selected'));
+      el.classList.add('selected');
+      el.closest('.session-card').classList.add('selected');
+      appointmentData.slot = s;
+      appointmentData.session = sess === 'morning' ? 'Morning OPD' : 'Evening OPD';
+    }
+
+    function selectSession(sess) {}
+
+    async function submitEnquiry() {
+      appointmentData.message = document.getElementById('patient-message').value;
+      const btn = document.getElementById('submit-enquiry-btn');
+      const ld = document.getElementById('submit-loader');
+      const err = document.getElementById('error-message');
+      btn.disabled = true; if(ld) ld.style.display = 'inline-block';
+      try {
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({ ...appointmentData, timestamp: new Date().toLocaleString() })
+        });
+        document.getElementById('appointment-form-container').style.display = 'none';
+        const successScreen = document.getElementById('success-screen');
+        successScreen.style.display = 'block';
+        
+        document.getElementById('summary-name').innerText = appointmentData.name;
+        document.getElementById('summary-phone').innerText = appointmentData.phone;
+        document.getElementById('summary-date').innerText = appointmentData.date;
+        document.getElementById('summary-session').innerText = appointmentData.session;
+        document.getElementById('summary-slot').innerText = appointmentData.slot;
+        document.getElementById('summary-message').innerText = appointmentData.message || '---';
+
+        successScreen.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } catch (e) {
+        btn.disabled = false; if(ld) ld.style.display = 'none';
+        if(err) { err.innerText = "Error. Please call 04651 227353."; err.style.display = 'block'; }
+      }
+    }
+
+    function resetForm() {
+      appointmentData = { name: '', phone: '', date: '', session: '', slot: '', message: '' };
+      document.getElementById('appointment-form').reset();
+      document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
+      const btn = document.getElementById('submit-enquiry-btn');
+      const ld = document.getElementById('submit-loader');
+      if(btn) btn.disabled = false; if(ld) ld.style.display = 'none';
+      document.getElementById('appointment-form-container').style.display = 'block';
+      document.getElementById('success-screen').style.display = 'none';
+      currentStep = 1; goToStep(1);
+    }
+  </script>
+</body>
+
+</html>

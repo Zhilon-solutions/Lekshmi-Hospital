@@ -1,0 +1,61 @@
+/* Smooth FAQ Accordion Enhancements */
+.accordion li {
+  transition: transform 0.3s ease;
+}
+
+.accordion li:hover {
+  transform: translateX(5px);
+}
+
+.accordion li a {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion li p {
+  display: block !important;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: max-height, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.style-2.accordion li a {
+  position: relative;
+  overflow: hidden;
+}
+
+.style-2.accordion li a::before {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.style-2.accordion li a span {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.style-2.accordion li a.active span {
+  transform: rotate(180deg);
+}
+
+.style-2.accordion li a:hover {
+  background: linear-gradient(90deg, rgba(0, 123, 255, 0.05) 0%, transparent 100%);
+}
+
+.accordion, .accordion * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.accordion li p {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.accordion2 li p {
+  display: block !important;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: max-height, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
