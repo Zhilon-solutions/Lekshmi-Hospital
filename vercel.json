@@ -1,3 +1,15 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/index-2", "destination": "/" },
+    { "source": "/team", "destination": "/" },
+    { "source": "/team-details", "destination": "/" },
+    { "source": "/project", "destination": "/" },
+    { "source": "/project-details", "destination": "/" },
+    { "source": "/testimonial", "destination": "/" },
+    { "source": "/faq", "destination": "/" },
+    { "source": "/blog-grid", "destination": "/blog-list" },
+    { "source": "/blog-2colum", "destination": "/blog-list" },
+    { "source": "/blog-left-sidebar", "destination": "/blog-list" }
+  ]
 }
