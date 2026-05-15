@@ -1,94 +1,79 @@
-/** 
- * Lekshmi Hospital - Appointment Enquiry Backend
+/**
+ * Google Apps Script for Hospital Website Forms
  * 
- * INSTRUCTIONS:
- * 1. Go to Extensions > Apps Script in your Google Sheet.
- * 2. Paste this code into the editor (delete any existing code).
- * 3. Click "Deploy" > "New Deployment".
- * 4. Select Type: "Web App".
- * 5. Set "Execute as": "Me".
- * 6. Set "Who has access": "Anyone".
- * 7. Click Deploy, authorize permissions, and COPY the Web App URL.
- * 8. Paste the URL into the APPS_SCRIPT_URL variable in appointment.html.
+ * SETUP INSTRUCTIONS:
+ * 1. Go to https://script.google.com
+ * 2. Create a new project
+ * 3. Paste this code
+ * 4. Click Deploy > New deployment
+ * 5. Select type: Web app
+ * 6. Execute as: Me
+ * 7. Who has access: Anyone
+ * 8. Click Deploy and copy the Web App URL
+ * 9. Replace SCRIPT_URL in form-handler.js with your URL
  */
 
-const SHEET_NAME = "Appointments";
-
-/**
- * Initializes the sheet with headers if it doesn't exist.
- */
-function initializeSheet() {
+// Initialize sheets on first run
+function initializeSheets() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
-  let sheet = ss.getSheetByName(SHEET_NAME);
   
-  if (!sheet) {
-    sheet = ss.insertSheet(SHEET_NAME);
-    const headers = [
-      "Timestamp", 
-      "Name", 
-      "Phone", 
-      "Preferred Date", 
-      "Session", 
-      "Time Slot", 
-      "Message", 
-      "Status"
-    ];
-    sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
-    sheet.setFrozenRows(1);
-    
-    // Optional: Format headers
-    sheet.getRange(1, 1, 1, headers.length)
-      .setBackground("#0c3c53")
-      .setFontColor("#ffffff")
-      .setFontWeight("bold");
+  // Create Appointments sheet if it doesn't exist
+  let appointmentSheet = ss.getSheetByName('Appointments');
+  if (!appointmentSheet) {
+    appointmentSheet = ss.insertSheet('Appointments');
+    appointmentSheet.appendRow(['Timestamp', 'Name', 'Phone', 'Service', 'Message']);
+    appointmentSheet.getRange('A1:E1').setFontWeight('bold').setBackground('#4CAF50');
   }
-  return sheet;
+  
+  // Create Contact sheet if it doesn't exist
+  let contactSheet = ss.getSheetByName('Contact');
+  if (!contactSheet) {
+    contactSheet = ss.insertSheet('Contact');
+    contactSheet.appendRow(['Timestamp', 'First Name', 'Last Name', 'Phone', 'Message']);
+    contactSheet.getRange('A1:E1').setFontWeight('bold').setBackground('#2196F3');
+  }
+  
+  return { appointmentSheet, contactSheet };
 }
 
-/**
- * Handles GET requests (Testing endpoint).
- */
-function doGet(e) {
-  return ContentService.createTextOutput(JSON.stringify({ "status": "App Script is running" }))
-    .setMimeType(ContentService.MimeType.JSON);
-}
-
-/**
- * Handles POST requests from the website.
- */
+// Handle POST requests from website forms
 function doPost(e) {
   try {
-    const sheet = initializeSheet();
     const data = JSON.parse(e.postData.contents);
+    const sheets = initializeSheets();
     
-    // Validate data
-    if (!data.name || !data.phone) {
-      throw new Error("Missing required fields: name or phone");
+    if (data.type === 'appointment') {
+      // Add appointment data
+      sheets.appointmentSheet.appendRow([
+        new Date(),
+        data.name,
+        data.phone,
+        data.service,
+        data.message
+      ]);
+    } else if (data.type === 'contact') {
+      // Add contact data
+      sheets.contactSheet.appendRow([
+        new Date(),
+        data.fname,
+        data.lname,
+        data.phone,
+        data.message
+      ]);
     }
-
-    // Append row: Timestamp, Name, Phone, Date, Session, Slot, Message, Status
-    const row = [
-      data.timestamp || new Date().toLocaleString(),
-      data.name,
-      data.phone,
-      data.date,
-      data.session,
-      data.slot,
-      data.message || "",
-      "Pending" // Default status
-    ];
     
-    sheet.appendRow(row);
-    
-    return ContentService.createTextOutput(JSON.stringify({ "result": "success" }))
+    return ContentService.createTextOutput(JSON.stringify({ status: 'success' }))
       .setMimeType(ContentService.MimeType.JSON);
       
   } catch (error) {
-    console.error("Error in doPost:", error);
     return ContentService.createTextOutput(JSON.stringify({ 
-      "result": "error", 
-      "message": error.toString() 
-    }))
-    .setMimeType(ContentService.MimeType.JSON);
+      status: 'error', 
+      message: error.toString() 
+    })).setMimeType(ContentService.MimeType.JSON);
   }
+}
+
+// Handle GET requests (for testing)
+function doGet(e) {
+  return ContentService.createTextOutput('Hospital Form Handler is running!');
 }
