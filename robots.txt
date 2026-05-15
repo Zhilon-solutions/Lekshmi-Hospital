@@ -1,29 +1,8 @@
 User-agent: *
 Allow: /
-Allow: /about
-Allow: /service
-Allow: /service-details
-Allow: /appointment
-Allow: /contact
-Allow: /blog-list
-Allow: /blog-details
 
-Disallow: /assets/
-Disallow: /venobox/
-Disallow: /index-2
-Disallow: /team
-Disallow: /team-details
-Disallow: /project
-Disallow: /project-details
-Disallow: /testimonial
-Disallow: /faq
-Disallow: /blog-grid
-Disallow: /blog-2colum
-Disallow: /blog-left-sidebar
-Disallow: /*.md
-Disallow: /*.json
-Disallow: /*.toml
-Disallow: /*.gs
-Disallow: /*.txt
+Sitemap: https://www.lekshmihospital.com/sitemap.xml
 
-Sitemap: https://lekshmihospital.com/sitemap.xml
+# Disallow admin or private directories if any
+Disallow: /js/
+Disallow: /css/
