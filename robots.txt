@@ -2,7 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.lekshmihospital.com/sitemap.xml
-
-# Disallow admin or private directories if any
-Disallow: /js/
-Disallow: /css/
