@@ -5,7 +5,7 @@
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Contact Lekshmi Hospital Kattathurai - Book appointments, get directions. Call 04651 227353. OP Timings: 9AM-1PM, 5PM-8PM. Located opposite Anaamalais Toyota.">
 	<meta name="author" content="Lekshmi Hospital">
 	<link rel="canonical" href="https://www.lekshmihospital.com/contact">
@@ -78,15 +78,25 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
-    <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NHTJVXKK');</script>
+    <!-- Google Tag Manager (Load on Interaction) -->
+  <script>
+    var gtmLoaded = false;
+    function loadGTM() {
+        if (gtmLoaded) return;
+        gtmLoaded = true;
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+              'gtm.start': new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-NHTJVXKK');
+    }
+    ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(event) {
+        window.addEventListener(event, loadGTM, { once: true, passive: true });
+    });
+    setTimeout(loadGTM, 5000);
+  </script>
   <!-- End Google Tag Manager -->
 
 </head>
@@ -162,6 +172,7 @@
 	</header>
 	<!-- Header End -->
 
+    <main>
     <!-- Page Header Section Start -->
     <div class="page-header dark-section parallaxie">
         <div class="container">
@@ -262,7 +273,7 @@
 
                         <!-- Google Map Start -->
                         <div class="google-map-iframe wow fadeInUp" data-wow-delay="0.2s">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63170.70374486981!2d77.2007914582031!3d8.2859753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0455f1128f8f1d%3A0x278a7ce7cef64389!2sLEKSHMI%20HOSPITAL!5e0!3m2!1sen!2sin!4v1778667133723!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63170.70374486981!2d77.2007914582031!3d8.2859753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0455f1128f8f1d%3A0x278a7ce7cef64389!2sLEKSHMI%20HOSPITAL!5e0!3m2!1sen!2sin!4v1778667133723!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="contact-google-map"></iframe>
                         </div>
                         <!-- Google Map End -->
                     </div>
@@ -315,6 +326,8 @@
         </div>
     </div>
     <!-- Contact location Form Box End -->
+
+    </main>
 
     <!-- Main Footer Start -->
     <div class="main-footer-prime bg-section dark-section">
@@ -468,6 +481,21 @@
     <script src="js/function.js"></script>
     <!-- Form Handler js file -->
     <script src="js/form-handler.js"></script>
+    <script>
+        var mapLoaded = false;
+        function loadMap() {
+            if (mapLoaded) return;
+            mapLoaded = true;
+            var mapIframe = document.getElementById("contact-google-map");
+            if (mapIframe) {
+                mapIframe.src = mapIframe.getAttribute("data-src");
+            }
+        }
+        ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(event) {
+            window.addEventListener(event, loadMap, { once: true, passive: true });
+        });
+        setTimeout(loadMap, 5000);
+    </script>
 </body>
 
 </html>

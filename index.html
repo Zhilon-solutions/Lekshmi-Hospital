@@ -5,24 +5,27 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="Lekshmi Hospital in Kattathurai, Marthandam - Quality healthcare services including General Medicine, Laboratory, X-Ray, Pharmacy. OP Timings: 9AM-1PM, 5PM-8PM. Call 04651 227353">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lekshmi Hospital in Kattathurai, Marthandam - Quality healthcare services including General Medicine, Laboratory, X-Ray, Pharmacy. OP Timings: 9AM-1PM, 5PM-8PM. Call 04651 227353">
     <meta name="author" content="Lekshmi Hospital">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.lekshmihospital.com/">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Lekshmi Hospital - Quality Healthcare in Kattathurai, Marthandam">
-    <meta property="og:description" content="Comprehensive healthcare services with experienced doctors. General Medicine, Lab, X-Ray & Pharmacy facilities available.">
+    <meta property="og:description"
+        content="Comprehensive healthcare services with experienced doctors. General Medicine, Lab, X-Ray & Pharmacy facilities available.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.lekshmihospital.com/">
     <meta property="og:image" content="https://www.lekshmihospital.com/images/favicon.png">
     <meta property="og:locale" content="en_IN">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lekshmi Hospital - Quality Healthcare in Kattathurai">
-    <meta name="twitter:description" content="Comprehensive healthcare services with experienced doctors in Marthandam.">
+    <meta name="twitter:description"
+        content="Comprehensive healthcare services with experienced doctors in Marthandam.">
     <meta name="twitter:image" content="https://www.lekshmihospital.com/images/favicon.png">
     <!-- ICO for Google Search & old browsers -->
     <link rel="icon" href="/favicon.ico">
@@ -35,9 +38,22 @@
     <!-- Apple devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
+    <!-- Preload Hero Image for LCP -->
+    <link rel="preload" as="image" href="images/docx.webp">
+    <!-- Preload Logo for Preloader FCP -->
+    <link rel="preload" as="image" href="images/logo2.webp">
+
+    <!-- Preload Critical Scripts and CSS -->
+    <link rel="preload" as="style" href="css/bootstrap.min.css">
+    <link rel="preload" as="style" href="css/custom.css">
+    <link rel="preload" as="script" href="js/jquery-3.7.1.min.js">
+    <link rel="preload" as="script" href="js/gsap.min.js">
+    <link rel="preload" as="script" href="js/SplitText.min.js">
+    <link rel="preload" as="script" href="js/function.js">
+
     <!-- Page Title -->
     <title>Lekshmi Hospital - Quality Healthcare in Kattathurai, Marthandam | General Medicine, Lab, X-Ray</title>
-    
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -105,7 +121,7 @@
       ]
     }
     </script>
-    
+
     <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
@@ -153,33 +169,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap"
         rel="stylesheet">
     <!-- Bootstrap Css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- SlickNav Css -->
-    <link href="css/slicknav.min.css" rel="stylesheet">
+    <link href="css/slicknav.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     <!-- Swiper Css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <!-- Font Awesome Icon Css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
     <!-- Animated Css -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" media="print" onload="this.media='all'">
     <!-- Magnific Popup Core Css File -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/magnific-popup.css" media="print" onload="this.media='all'">
     <!-- Mouse Cursor Css File -->
-    <link rel="stylesheet" href="css/mousecursor.css">
+    <link rel="stylesheet" href="css/mousecursor.css" media="print" onload="this.media='all'">
     <!-- Main Custom Css -->
-    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet">
     <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NHTJVXKK');</script>
-  <!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NHTJVXKK');</script>
+    <!-- End Google Tag Manager -->
 
 </head>
 
@@ -193,7 +210,6 @@
         </div>
     </div>
     <!-- Preloader End -->
-
     <!-- Header Start -->
     <header class="main-header">
         <div class="header-sticky">
@@ -220,9 +236,9 @@
                                     </ul> -->
                                 </li>
                                 <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Us</a> -->
-                                    <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
-                                    <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
-                                    <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+                                <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
+                                <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="service-single.html">Service
                                                 Details</a></li>
@@ -248,8 +264,8 @@
                                     </ul>
                                 </li> -->
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link"
-                                        href="contact.html">Book Appointment</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="contact.html">Book
+                                        Appointment</a></li>
                             </ul>
                         </div>
 
@@ -268,6 +284,7 @@
     </header>
     <!-- Header End -->
 
+    <main>
     <!-- Hero Section Start -->
     <div class="hero-prime dark-section parallaxie">
         <div class="container">
@@ -385,7 +402,7 @@
                         <!-- Hero CTA Image Start -->
                         <div class="hero-cta-image-prime">
                             <figure>
-                                <img src="images/group.webp" alt="Lekshmi Hospital Medical Team">
+                                <img src="images/group.png" alt="Lekshmi Hospital Medical Team">
                             </figure>
                         </div>
                         <!-- Hero CTA Image End -->
@@ -470,6 +487,32 @@
                                     <h3>Compassionate Healthcare</h3>
                                     <p>We provide attentive medical care with a focus on comfort, convenience, and
                                         patient well-being.</p>
+                                </div>
+                            </div>
+                            <!-- About Us Item End -->
+
+                            <!-- About Us Item Start -->
+                            <div class="about-us-item-prime">
+                                <div class="icon-box">
+                                    <img src="images/icon-service-item-1-prime.svg" alt="Expert Medical Team">
+                                </div>
+                                <div class="about-item-content-prime">
+                                    <h3>Expert Medical Team</h3>
+                                    <p>Our experienced professionals ensure that you receive the highest standard of
+                                        care and accurate diagnosis.</p>
+                                </div>
+                            </div>
+                            <!-- About Us Item End -->
+
+                            <!-- About Us Item Start -->
+                            <div class="about-us-item-prime">
+                                <div class="icon-box">
+                                    <img src="images/icon-why-choose-item-1-prime.svg" alt="Modern Facilities">
+                                </div>
+                                <div class="about-item-content-prime">
+                                    <h3>Modern Facilities</h3>
+                                    <p>Equipped with advanced technology to deliver efficient, effective, and reliable
+                                        healthcare services.</p>
                                 </div>
                             </div>
                             <!-- About Us Item End -->
@@ -840,16 +883,16 @@
                         <!-- Team Item Iamage Start -->
                         <div class="team-item-image">
                             <!-- <a href="team-single.html" data-cursor-text="View"> -->
-                                <figure>
-                                    <img src="images/doc_2.webp" alt="">
-                                </figure>
+                            <figure>
+                                <img src="images/doc_2.webp" alt="">
+                            </figure>
                             <!-- </a> -->
                         </div>
                         <!-- Team Item Iamage End -->
 
                         <!-- Team Item Body Start -->
                         <div class="team-item-body">
-                           
+
                             <!-- <div class="team-social-list-box">
                                 <div class="team-social-btn">
                                     <a href="team-single.html"><img src="images/icon-share.svg" alt=""></a>
@@ -863,12 +906,12 @@
                                     </ul>
                                 </div>
                             </div> -->
-                           
+
                             <div class="team-item-content">
                                 <h2>Dr. Hari. M.L. MD</h2>
                                 <p>General Medicine</p>
                             </div>
-                            
+
                         </div>
                         <!-- Team Item Body End -->
                     </div>
@@ -881,9 +924,9 @@
                         <!-- Team Item Iamage Start -->
                         <div class="team-item-image">
                             <!-- <a href="team-single.html" data-cursor-text="View"> -->
-                                <figure>
-                                    <img src="images/doc_1.webp" alt="">
-                                </figure>
+                            <figure>
+                                <img src="images/doc_1.webp" alt="">
+                            </figure>
                             <!-- </a> -->
                         </div>
                         <!-- Team Item Iamage End -->
@@ -1589,6 +1632,8 @@
 
 
 
+    </main>
+
     <!-- Main Footer Start -->
     <div class="main-footer-prime bg-section dark-section">
         <div class="container">
@@ -1698,7 +1743,8 @@
 
                 <div class="col-lg-12">
                     <!-- Footer Copyright Text Start -->
-                        <p>Copyright © 2026 Lekshmi Hospital. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+                    <p>Copyright © 2026 Lekshmi Hospital. All Rights Reserved. | <a href="privacy.html">Privacy
+                            Policy</a> | <a href="terms.html">Terms of Service</a></p>
                     <!-- Footer Copyright Text End -->
                 </div>
             </div>
@@ -1707,40 +1753,40 @@
     <!-- Main Footer End -->
 
     <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script defer src="js/jquery-3.7.1.min.js"></script>
     <!-- Circle Progress Js File -->
-    <script src="js/circle-progress.min.js"></script>
+    <script defer src="js/circle-progress.min.js"></script>
     <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
     <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
+    <script defer src="js/validator.min.js"></script>
     <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
+    <script defer src="js/jquery.slicknav.js"></script>
     <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
     <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
+    <script defer src="js/jquery.waypoints.min.js"></script>
+    <script defer src="js/jquery.counterup.min.js"></script>
     <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script defer src="js/jquery.magnific-popup.min.js"></script>
     <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
+    <script defer src="js/SmoothScroll.js"></script>
     <!-- Parallax js -->
-    <script src="js/parallaxie.js"></script>
+    <script defer src="js/parallaxie.js"></script>
     <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
+    <script defer src="js/gsap.min.js"></script>
+    <script defer src="js/magiccursor.js"></script>
     <!-- Text Effect js file -->
-    <script src="js/SplitText.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
+    <script defer src="js/SplitText.min.js"></script>
+    <script defer src="js/ScrollTrigger.min.js"></script>
     <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script defer src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
-    <script src="js/wow.min.js"></script>
+    <script defer src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
+    <script defer src="js/function.js"></script>
     <!-- Form Handler js file -->
-    <script src="js/form-handler.js"></script>
+    <script defer src="js/form-handler.js"></script>
 </body>
 
 </html>
