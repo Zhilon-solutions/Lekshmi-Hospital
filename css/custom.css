@@ -8385,6 +8385,38 @@ header.main-header .header-sticky.active{
 	opacity: 50%;
 }
 
+/* Appointment form select styling */
+.contact-now-prime .contact-form-prime .appt-select{
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 18px center;
+	background-size: 14px;
+	cursor: pointer;
+}
+
+.contact-now-prime .contact-form-prime .appt-select option{
+	background-color: #0e3a3f;
+	color: var(--white-color);
+}
+
+.contact-now-prime .contact-form-prime textarea.form-control{
+	resize: vertical;
+	min-height: 100px;
+}
+
+/* Contact page appointment form select */
+.appt-select-contact{
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 18px center;
+	background-size: 14px;
+	cursor: pointer;
+}
+
 .our-testimonials-prime{
 	padding: 120px 0;
 }
@@ -8674,15 +8706,19 @@ header.main-header .header-sticky.active{
 }
     
 .footer-quick-links-prime{
-	width: calc(26% - 3.472vw);
+	width: calc(22% - 3.472vw);
+}
+
+.footer-treatments-links-prime{
+	width: calc(38% - 3.472vw);
 }
 
 .footer-service-links-prime{
-	width: calc(37% - 3.472vw);
+	width: calc(30% - 3.472vw);
 }
 
 .footer-privacy-policy-prime{
-	width: calc(37% - 3.472vw);
+	width: calc(30% - 3.472vw);
 }
 
 .footer-links-prime::before{
