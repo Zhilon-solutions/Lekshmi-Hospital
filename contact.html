@@ -281,46 +281,77 @@
                 </div>
 
                 <div class="col-xl-6">
-                    <!-- Contact Form Start -->
+                    <!-- Appointment Form Start -->
                     <div class="contact-form">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <p class="wow fadeInUp">Reach out to our healthcare experts today for trusted guidance and personalized care.</p>
+                            <h2 class="wow fadeInUp">Book an Appointment</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Fill in your details and select a convenient OP timing — our team will confirm your slot shortly.</p>
                         </div>
                         <!-- Section Title End -->
 
-                        <!-- Contact Form Start -->
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Appointment Form Start -->
+                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.3s" novalidate>
                             <div class="row">
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*" required>
+                                    <input type="text" name="name" class="form-control" id="appt-name" placeholder="Full Name*" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*" required>
+                                    <input type="text" name="phone" class="form-control" id="appt-phone" placeholder="Phone Number*" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-12 mb-4">
-                                    <input type="text" name="call" class="form-control" id="call" placeholder="Phone Number*" required>
+                                    <select name="service" class="form-control appt-select-contact" id="appt-timing">
+                                        <option value="" disabled selected>Select OP Timing</option>
+                                        <option value="09:00 AM">09:00 AM</option>
+                                        <option value="09:15 AM">09:15 AM</option>
+                                        <option value="09:30 AM">09:30 AM</option>
+                                        <option value="09:45 AM">09:45 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="10:15 AM">10:15 AM</option>
+                                        <option value="10:30 AM">10:30 AM</option>
+                                        <option value="10:45 AM">10:45 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="11:15 AM">11:15 AM</option>
+                                        <option value="11:30 AM">11:30 AM</option>
+                                        <option value="11:45 AM">11:45 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="12:15 PM">12:15 PM</option>
+                                        <option value="12:30 PM">12:30 PM</option>
+                                        <option value="12:45 PM">12:45 PM</option>
+                                        <option value="05:00 PM">05:00 PM</option>
+                                        <option value="05:15 PM">05:15 PM</option>
+                                        <option value="05:30 PM">05:30 PM</option>
+                                        <option value="05:45 PM">05:45 PM</option>
+                                        <option value="06:00 PM">06:00 PM</option>
+                                        <option value="06:15 PM">06:15 PM</option>
+                                        <option value="06:30 PM">06:30 PM</option>
+                                        <option value="06:45 PM">06:45 PM</option>
+                                        <option value="07:00 PM">07:00 PM</option>
+                                        <option value="07:15 PM">07:15 PM</option>
+                                        <option value="07:30 PM">07:30 PM</option>
+                                        <option value="07:45 PM">07:45 PM</option>
+                                    </select>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-12 mb-5">
-                                    <textarea name="msg" class="form-control" id="msg" rows="5" placeholder="Write Message Here..."></textarea>
+                                    <textarea name="message" class="form-control" id="appt-msg" rows="4" placeholder="Write Message Here..."></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <button type="submit" class="btn-default">Submit Message</button>
-                                    <div id="formsubmit" class="h3 hidden"></div>
+                                    <div class="form-msg h3 hidden"></div>
                                 </div>
                             </div>
                         </form>
-                        <!-- Contact Form End -->
+                        <!-- Appointment Form End -->
                     </div>
-                    <!-- Contact Form End -->
+                    <!-- Appointment Form End -->
                 </div>
             </div>
         </div>
@@ -377,19 +408,34 @@
                         </div>
                         <!-- Footer Links End -->
 
-                        <!-- Footer Links End -->
+                        <!-- Footer Treatments Links Start -->
+                        <div class="footer-links-prime footer-treatments-links-prime">
+                            <h2>Treatments We Offer</h2>
+                            <ul>
+                                <li><a href="contact.html">Fever Evaluation &amp; Treatment</a></li>
+                                <li><a href="contact.html">Diabetes Management</a></li>
+                                <li><a href="contact.html">Hypertension Management</a></li>
+                                <li><a href="contact.html">Thyroid Disorders</a></li>
+                                <li><a href="contact.html">Asthma &amp; COPD</a></li>
+                                <li><a href="contact.html">Arthritis Management</a></li>
+                                <li><a href="contact.html">Preventive Checkups</a></li>
+                                <li><a href="contact.html">Diabetic Wound Care</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Treatments Links End -->
+
+                        <!-- Footer Services Links Start -->
                         <div class="footer-links-prime footer-service-links-prime">
                             <h2>Our Services</h2>
                             <ul>
                                 <li><a href="servicedetail.html?service=general-medicine">General Medicine</a></li>
-                                <li><a href="servicedetail.html?service=laboratory-services">Laboratory Services</a>
-                                </li>
+                                <li><a href="servicedetail.html?service=laboratory-services">Laboratory Services</a></li>
                                 <li><a href="servicedetail.html?service=pharmacy">In-house Pharmacy</a></li>
                                 <li><a href="servicedetail.html?service=xray">X-Ray Facility</a></li>
                                 <li><a href="servicedetail.html?service=op-consultation">OP Consultation</a></li>
                             </ul>
                         </div>
-                        <!-- Footer Links End -->
+                        <!-- Footer Services Links End -->
                     </div>
                     <!-- Footer Links Box End -->
                 </div>
